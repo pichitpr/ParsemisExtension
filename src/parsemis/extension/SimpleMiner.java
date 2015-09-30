@@ -14,8 +14,8 @@ public class SimpleMiner {
 	public static <N,E> Collection<Graph<N,E>> 
 			mine(Collection<Graph<N,E>> graphs, int minFrequency){
 		/*
-		 * This method uses setting parser here for lazy setting setup.
-		 * The setting parser requires "parser" property which will be set automatically
+		 * This method uses Setting's parser here for lazy setup.
+		 * The Setting's parser requires "parser" property which will be set automatically
 		 * according to specified graphFile extension. Therefore, dummy graphFile is required
 		 */
 		@SuppressWarnings("unchecked")
