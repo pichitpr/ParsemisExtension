@@ -8,6 +8,17 @@ import de.parsemis.graph.HPMutableGraph;
 
 public class GraphCreationHelper<N,E> {
 	
+	private static int id = 0;
+	public static String getID(){
+		String s = ""+id;
+		id++;
+		return s;
+	}
+	
+	public static void resetID(){
+		id = 0;
+	}
+	
 	private GraphFactory<N,E> factory = new HPListGraph.Factory<N,E>(null,null);
 	
 	private HPMutableGraph<N,E> currentGraph;
