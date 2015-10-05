@@ -57,3 +57,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.txt
+digraph.dot
+*.dot
+.settings/org.eclipse.jdt.core.prefs
