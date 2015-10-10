@@ -27,7 +27,8 @@ public class SimpleMiner {
 		List<String> options = new LinkedList<String>();
 		options.add("--algorithm=gspan"); //We use gSpan only
 		options.add("--graphFile=x.dot"); //Dummy filename (force the library to use DotParser)
-		options.add("--swapFile=swap.txt");
+		options.add("--singleRooted=true");
+		options.add("--swapFile=swap.txt"); //Use swap file
 		options.add("--minimumFrequency="+minFrequency);
 		if(thread > 1){
 			options.add("--distribution=threads");
